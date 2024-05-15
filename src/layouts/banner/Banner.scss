@@ -1,0 +1,71 @@
+@import '../../utils/styles.scss';
+
+.banner-container{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .avatar-info{
+        display: flex;
+        gap: 20px;
+        .avatar{
+            
+            img{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .info{
+            .name{
+                font-size: 1.2em;
+            }
+            .localization{
+                font-size: 0.9em;
+                margin-top: 2px;
+                color: gray;
+            }
+
+            .title{
+                margin-top: 6px;
+                font-size: 1.4em;
+                background: linear-gradient(135deg, $primary-color, rgb(190, 190, 4));
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                overflow: hidden; /* Masquer le texte supplémentaire */
+                animation: typing 4s steps(22);
+                white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+            }
+        }
+    }
+
+    .button{
+        background-color: $primary-color;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+        animation: zooming 1s ease infinite;
+    }
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 250px; 
+    }
+}
+
+
+@keyframes zooming {
+    from{
+        transform: scale(0.95);
+    }
+    to{
+        transform: scale(1);
+    }
+}

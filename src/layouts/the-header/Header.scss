@@ -1,0 +1,38 @@
+@import '../../utils/styles.scss';
+
+
+.header-container{
+    height: 60px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+
+    header{
+        max-width: $pc-max-width;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 15px;
+
+        .logo{
+            font-size: 1.8em;
+            font-weight: bold;
+            font-family: "Dancing Script", cursive;
+        }
+        .mode-svg-container{
+            width: 28px;
+            height: 28px;
+            display: flex;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            border: 2px solid white;
+            cursor: pointer;
+            
+            img{
+                width: 30px;
+            }
+        }
+        
+    }
+}

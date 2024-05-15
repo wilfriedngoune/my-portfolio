@@ -1,0 +1,52 @@
+@import './utils/styles.scss';
+
+#root {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body{
+  background-color: #121212;
+  color: white;
+  margin: 0;
+}
+
+.content{
+  max-width: $pc-max-width;
+  margin: auto;
+  .nav-bar{
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+
+    .single-link{
+      padding: 20px;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      cursor: pointer;
+    }
+    .single-link:hover{
+      background-color: #1F1B24;
+      color: $primary-color;
+      animation: comeup 0.3s ease;
+    }
+    .selected{
+      background-color: #1F1B24;
+      color: $primary-color;
+    }
+  }
+  .information-container{
+    background-color: #1F1B24;
+    height: calc(100vh - 370px);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+  }
+}
+
+@keyframes comeup {
+  from{
+    transform: translateY(10px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
