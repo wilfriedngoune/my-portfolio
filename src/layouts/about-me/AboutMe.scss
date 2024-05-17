@@ -1,0 +1,100 @@
+@import '../../utils/styles.scss';
+
+
+.about-me-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .about-me-wrapper{
+        display: flex;
+        width: 70%;
+        margin: auto;
+        gap: 40px;
+        .avatar{
+            animation: zoom-in 0.7s forwards;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+    
+        .bio-container{
+            color: rgba(255, 255, 255, 0.767);
+            animation: flicker 0.5s ease 1s;
+            .text1{
+                font-size: 1em;
+            }
+
+            .text2{
+                margin-top: 15px;
+            }
+
+            .text3{
+                margin-top: 7px;
+            }
+
+            .download-cv{
+                position: relative;
+                padding: 15px;
+                background-color: rgba($color: $primary-color, $alpha: 0.5);
+                margin-top: 20px;
+                border-radius: 15px;
+                cursor: pointer;
+                width: fit-content;
+                overflow: hidden;
+                color: white;
+            }
+
+              
+            .download-cv::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: -40px;
+                width: 30px;
+                height: 300px;
+                transform: rotate(-45deg);
+                background-color: rgba(255, 255, 255, 0.562);
+                box-shadow: 0px 20px 30px rgba(255, 255, 255, 0.623);
+                animation: shine-button 3s ease infinite;
+            }
+            
+
+            
+        }
+    }
+    
+}
+
+
+@keyframes zoom-in {
+    0% {
+      transform: scale(0)
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    25%, 75% {
+      opacity: 1;
+    }
+}
+
+@keyframes shine-button {
+    0% {
+      transform: rotate(-45deg) translateX(0);
+    }
+    100% {
+      transform: rotate(-45deg) translateX(300px);
+    }
+}

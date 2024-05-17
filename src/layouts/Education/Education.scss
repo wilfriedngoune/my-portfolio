@@ -1,0 +1,118 @@
+@import '../../utils/styles.scss';
+
+
+.education-container{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+
+    .education-wrapper{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        .uni-section{
+
+            .single-uni{
+                display: flex;
+                padding: 20px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                gap: 15px;
+                margin-bottom: 10px;
+                transition: background-color 0.3s ease-in-out;
+                cursor: pointer;
+                .logo-container{
+                    background-color: white;
+                    width: 60px;
+                    height: 60px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 6px;
+    
+                    img{
+                        width: 30px;
+                    }
+                }
+    
+                .information{
+                    .name{
+    
+                    }
+                    .year{
+                        color: gray;
+                        font-size: 0.9em;
+                        margin-top: 3px;
+                    }
+                    .diplom{
+                        margin-top: 5px;
+                        color: gray;
+                    }
+                }
+    
+            }
+            .single-uni:hover{
+                background-color: $background-color;
+            }
+    
+            .selected{
+                background-color: $background-color;
+            }
+        }
+    
+        .details-section{
+            width: 50%;
+            background-color: $background-color;
+            padding: 20px;
+            border-radius: 10px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            overflow: hidden;
+
+            .content{
+                animation: slide-up 0.5s forwards;
+
+                .local{
+                    font-size: 1.4em;
+                }
+    
+                .year{
+                    font-size: 0.9em;
+                    color: gray;
+                    margin-top: 5px;
+                }
+    
+                ul{
+                    margin: 20px 0;
+                    li{
+                        margin-top: 10px;
+                        margin-left: -20px;
+                    }
+                }   
+    
+    
+                .certificats{
+                    color: $primary-color;
+                    font-weight: bold;
+                    cursor: pointer;
+                }
+                .certificats:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@keyframes slide-up {
+    0% {
+      opacity: 0; 
+      transform: translateY(20%); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+

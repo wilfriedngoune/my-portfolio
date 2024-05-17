@@ -32,15 +32,15 @@ function Banner(){
         <div className='banner-container'>
             <div className="avatar-info">
                 <div className="avatar">
-                    <img src="/avatars/avatar1.png" alt="Avatar 1" />
+                    <img src="/avatars/avatar1.png" className='avatar-1' alt="Avatar 1" />
                 </div>
                 <div className="info">
                     <div className="name">Wilfried Baudouin, Ngoune Tsaka</div>
-                    <div className="localization">Brauschweig, Germany</div>
+                    <div className="localization">Wolfenbüttel, Germany</div>
                     <div ref={titleRef} className="title">I'am a WEB Developer !</div>
                 </div>
             </div>
-            <div className="button">Hire me !</div>
+            {/* <div className="button">Hire me !</div> */}
         </div>
     )
 }

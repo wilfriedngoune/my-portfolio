@@ -1,5 +1,4 @@
 import './Header.scss'
-import dark from '../../assets/dark.svg'
 
 
 
@@ -8,8 +7,8 @@ function Header(){
         <div className='header-container'>
             <header>
                 <div className="logo">W.N.</div>
-                <div className="mode-svg-container">
-                    <img src={dark} alt="Dark mode" />
+                <div title='Code on GitHub' className="mode-svg-container">
+                   &lt;/&gt;
                 </div>
             </header>
         </div>

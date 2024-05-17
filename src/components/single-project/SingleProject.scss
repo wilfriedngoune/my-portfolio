@@ -1,0 +1,59 @@
+@import '../../utils/styles.scss';
+
+
+.single-project-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .info-section{
+        width: 30%;
+
+        .logo-title{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .logo-container{
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                background-color: white;
+                img{
+                    width: 40px;
+                }
+            }
+
+            .title{
+                font-weight: bold;
+            }
+        }
+        .description{
+            margin: 15px 0 5px 0;
+            font-size: 1em;
+        }
+        .stacks{
+            color: gray;
+            font-size: 0.9em;
+        }
+
+        .visit{
+            padding: 15px 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: fit-content;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+    }
+    .demo-section{
+        width: 65%;
+        
+        img{
+            width: 100%;
+        }
+    }
+}

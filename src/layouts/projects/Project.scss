@@ -1,0 +1,80 @@
+@import '../../utils/styles.scss';
+
+
+.projet-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .projet-wrapper{
+        width: 98%;
+        margin: auto;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+   
+        .display-none {
+            animation: disapear 0.3s linear;
+        }
+
+        .come-from-left{
+            animation: slide-left 0.3s  linear;
+        }
+
+        .come-from-rigth{
+            animation: slide-rigth 0.3s  linear;
+        }
+
+        .nav{
+            min-width: 70px;
+            .nav-svg{
+                width: 60px;
+                cursor: pointer;
+                transition: transform 0.4s ease;
+            }
+    
+            .next{
+                transform: rotate(180deg);
+            }
+        }
+
+    }
+    
+}
+
+
+@keyframes slide-rigth {
+    0% {
+      opacity: 0; 
+      transform: translateX(20%); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-left {
+    0% {
+      opacity: 0; 
+      transform: translateX(-20%); 
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes disapear {
+    0% {
+      transform: scale(1);
+      opacity: 1; 
+    }
+    100% {
+      transform: scale(0);
+      opacity: 0; 
+    }
+  }

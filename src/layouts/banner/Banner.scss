@@ -16,6 +16,7 @@
                 height: 80px;
                 border-radius: 50%;
                 object-fit: cover;
+                animation: animate-avatar 0.4s ease;
             }
         }
 
@@ -67,5 +68,17 @@
     }
     to{
         transform: scale(1);
+    }
+}
+
+@keyframes animate-avatar {
+    from{
+        width: 200px;
+        height: 200px;
+        transform: translate(calc(100vw/4), calc(100vh/4));
+    }
+    to{
+        width: 80px;
+        height: 80px;
     }
 }
