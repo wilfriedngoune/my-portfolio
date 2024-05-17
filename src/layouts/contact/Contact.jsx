@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import './Contact.scss';
-import x from '../../assets/x.jpg'
-import leetcode from '../../assets/leetcode.svg'
+import upwork from '../../assets/upwork.svg'
 import fiverr from '../../assets/fiverr.svg'
 
 function Contact(){
@@ -20,17 +19,17 @@ function Contact(){
 
                     <div className="single-platform">
                         <div className="logo-container">
-                            <img src={leetcode} alt="" />
+                            <img src={upwork} alt="" />
                         </div>
-                        <div className="name">LeetCode</div>
+                        <div className="name">Upwork</div>
                     </div>
 
-                    <div className="single-platform">
+                    {/* <div className="single-platform">
                         <div className="logo-container">
                             <img src={x} alt="" />
                         </div>
                         <div className="name">X</div>
-                    </div>
+                    </div> */}
                 </div>
                </div>
                 <div className="divider"></div>
