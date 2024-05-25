@@ -7,6 +7,8 @@ import AboutMe from './layouts/about-me/AboutMe'
 import Education from './layouts/Education/Education'
 import Contact from './layouts/contact/Contact'
 import Project from './layouts/projects/Project'
+import Skills from './layouts/skills/Skills'
+import Experience from './layouts/experience/Experience'
 
 function App() {
   const [selectedLink, setSelectedLink] = useState('about')
@@ -20,6 +22,10 @@ function App() {
     {
       name : 'Education',
       code : 'education'
+    }, 
+    {
+      name : 'Experience',
+      code : 'experience'
     }, 
     {
       name : 'Skills',
@@ -38,13 +44,13 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoadImage(false)
-    }, 2000);
+    }, 3000);
   }, [])
 
   useEffect(() => {
     setTimeout(() => {
       setDisplaySkeleton(false)
-    }, 1000);
+    }, 2000);
   }, [])
 
   const handeChangeLink = (link) =>{
@@ -56,7 +62,7 @@ function App() {
       <Header />
       {loadImage ? 
         <div className="load-image">
-          {displaySkeleton ? <div className="avatar-singleton"></div> :  <img src="/avatars/avatar1.png" alt="Avatar 1" /> }
+          {displaySkeleton ? <div className="avatar-singleton"></div> :  <img src="/avatars/avatar.png" alt="Avatar 1" /> }
         </div> : <>
         <div className="content">
           <Banner />
@@ -74,8 +80,24 @@ function App() {
             <div className="information-container">
                 {selectedLink === 'about'&& <AboutMe />}
                 {selectedLink === 'education' && <Education />}
+                {selectedLink === 'experience' && <Experience />}
                 {selectedLink === 'contact' && <Contact />}
                 {selectedLink === 'projects' &&<Project /> }
+                {selectedLink === 'skills' &&<Skills /> }
+            </div>
+            <div className="information-container-mobile">
+              <div id='about' className="title">About</div>
+              <AboutMe />
+              <div  id='education' className="title">Education</div>
+              <Education />
+              <div id='experience' className="title">Experience</div>
+              <Experience />
+              <div  id='skills' className="title">Skills</div>
+              <Skills />
+              <div  id='projects' className="title">Projects</div>
+              <Project />
+              <div  id='contact' className="title">Contact</div>
+              <Contact />
             </div>
           </div>
         </div>

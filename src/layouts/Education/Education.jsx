@@ -36,15 +36,19 @@ function Education(){
                         {
                             selectedUni == 'ostfalia' && 
                             <div className="content">
+                                <div className="uni-fac">
+                                    <div className="name">Hochschule Ostfalia</div>
+                                    <div className="fac">Master, Informatic</div>
+                                </div>
                                 <div className="local">Wolfenbüttel, Germany</div>
                                 <div className="year">2024 - Now</div>
 
                                 <ul>
-                                    <li>Feature 1</li>
-                                    <li>Feature 2</li>
-                                    <li>Feature 3</li>
-                                    <li>Feature 4</li>
-                                    <li>Feature 5</li>
+                                    <li>Algorithms, Data Structures and Database</li>
+                                    <li>Modeling and object-oriented programming</li>
+                                    <li>WEB programming</li>
+                                    <li>Information system and application testing</li>
+                                    <li>Advanced programming technology</li>
                                 </ul>
 
                                 <div className="certificats">Certificats</div>
@@ -54,15 +58,19 @@ function Education(){
                         {
                             selectedUni == 'uy1' && 
                             <div className="content">
+                                 <div className="uni-fac">
+                                    <div className="name">University of Yaounde 1</div>
+                                    <div className="fac">Bachelor, Software Engeneering</div>
+                                </div>
                                 <div className="local">Yaounde, Cameroon</div>
                                 <div className="year">2019 - 2022</div>
 
                                 <ul>
-                                    <li>Feature 1</li>
-                                    <li>Feature 2</li>
-                                    <li>Feature 3</li>
-                                    <li>Feature 4</li>
-                                    <li>Feature 5</li>
+                                    <li>Algorithms, Data Structures and Database</li>
+                                    <li>Modeling and object-oriented programming</li>
+                                    <li>WEB programming</li>
+                                    <li>Information system and application testing</li>
+                                    <li>Advanced programming technology</li>
                                 </ul>
 
                                 <div className="certificats">Certificats</div>

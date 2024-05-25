@@ -16,7 +16,7 @@
                 height: 80px;
                 border-radius: 50%;
                 object-fit: cover;
-                animation: animate-avatar 0.4s linear;
+                animation: animate-avatar 0.7s ease forwards;
             }
         }
 
@@ -81,5 +81,26 @@
         width: 80px;
         height: 80px;
 
+    }
+}
+
+@media screen and (max-width : $mobile-breakpoint) {
+    .banner-container{
+        margin-top: 80px;
+        .avatar-info{
+            align-items: center;
+            gap: 15px;
+            .avatar{
+                img{
+                    width: 70px;
+                    height: 70px;
+                }   
+            }
+            .info{
+                .name{
+                    font-size: 1.1em;
+                }
+            }
+        }
     }
 }

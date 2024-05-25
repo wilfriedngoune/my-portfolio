@@ -15,7 +15,7 @@
         justify-content: center;
         gap: 50px;
 
-        .title{
+        .contact-title{
             font-size: 1.3em;
             font-weight: bold;
         }
@@ -58,24 +58,26 @@
         .divider{
             width: 2px;
             height: 200px;
-            background-color: $background-color;
+            background-color: rgba(128, 128, 128, 0.336);
         }
 
         .form-section{
             width: 60%;
              animation: slide-up 1s forwards;
             .form{
-            margin-top: 20px;
+                margin-top: 20px;
                 input, textarea{
                     width: 70%;
+                    background-color: rgba(255, 255, 255, 0.829);
                     margin-bottom: 10px;
                     padding: 10px;
                     font-family: inherit;
                     font-size: 0.9em;
                     border-radius: 4px;
-                    border: 1px solid white;
+                    border: 1px solid rgba(255, 255, 255, 0.61);
                     outline: none;
                     box-sizing: border-box;
+                    color: black;
                 }
                 textarea{
                     height: 70px;
@@ -123,5 +125,36 @@
     100% {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+
+  @media screen and (max-width:$mobile-breakpoint) {
+    .contact-container .contact-wrapper{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+        width: 100%;
+        .other-platform{
+            width: 100%;
+        }
+
+        .divider{
+            height: 2px;
+            width: 200px;
+            margin: auto;
+        }
+
+        .form-section{
+            width: 100%;
+            .form{
+                input, textarea{
+                    width: 100%;
+                }
+                .submit{
+                    width: 100%;
+                }
+            }
+           
+        }
     }
   }

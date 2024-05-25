@@ -1,0 +1,61 @@
+@import '../../utils/styles.scss';
+
+
+.experience-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .experience-wrapper{
+        .single-experience{
+            background-color: rgba(255, 255, 255, 0.089);
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            width: 350px;
+            border-radius: 7px;
+            gap: 20px;
+            animation: zoom-experience 0.4s forwards;
+
+            .logo{
+                width: 80px;
+            }
+            .other-info{
+                .work-title{
+                }
+                .name-type{
+                    display: flex;
+                    font-size: 0.9em;
+                    gap: 5px;
+                    margin: 4px 0;
+                }
+                .time{
+                    font-size: 0.9em;
+                    color: gray;
+                }
+
+                .description{
+                    margin-top: 15px;
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+
+@keyframes zoom-experience {
+    0% {
+      transform: scale(0.9)
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
+@media screen and (max-width:$mobile-breakpoint){
+    .experience-container .experience-wrapper .single-experience{
+        width: 90%;
+    }
+}

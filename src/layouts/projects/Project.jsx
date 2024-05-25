@@ -11,30 +11,33 @@ function Project(){
             name : "Alaahza",
             description : "A web application that enables a given African to learn to read, write and communicate in his or her mother tongue. The application is already in production and has several users.",
             link : "https://dictionary.alaahza.com",
-            demo : 'alaahza.mp4',
+            gallery : ['/alaahza/1.png', '/alaahza/2.png', '/alaahza/3.png', '/alaahza/4.png'],
             logo : 'alaahza.png',
             color : '#7A2BCF',
-            stacks : "#TypeScript #SCSS #ReactJS #NodeJS #Express #MongoDB"
+            stacks : "#TypeScript #SCSS #ReactJS #NodeJS #Express #MongoDB",
+            state : 'prod'
         },
 
         {
             name : "MyDE",
             description : "MyDE is a web application to help you prepare for the TelC C1 German language exam. It contains hints for better preparation and exercises for practice.",
             link : "https://myydee.com",
-            demo : 'myde.mp4',
+            gallery : ['/myde/1.png', '/myde/2.png', '/myde/3.png', '/myde/4.png', '/myde/5.png', '/myde/6.png', '/myde/7.png'],
             logo : 'myde.png',
             color : '#273be2',
-            stacks : "#JavaScript #Axios #SCSS #ReactJS #NodeJS #Express #MongoDB"
+            stacks : "#JavaScript #Axios #SCSS #ReactJS #NodeJS #Express #MongoDB",
+            state : 'prod'
         },
 
         {
             name : "The Village",
             description : "Web application similar to linkedin. Connects profiles with similar characteristics. Whether similar in preference or profession. The application focuses on the field of medicine.",
-            link : "https://dev.ghealthvillage.com/",
-            demo : 'thevillage.mp4',
+            link : "",
+            gallery : ['/thevillage/1.png', '/thevillage/2.png', '/thevillage/3.png', '/thevillage/4.png'],
             logo : 'thevillage.jpeg',
             color : 'green',
-            stacks : "#TypeScript #SCSS #ReactJS #NodeJS #Express #MongoDB"
+            stacks : "#TypeScript #SCSS #ReactJS #NodeJS #Express #MongoDB",
+            state : 'dev'
         }
     ]
     const projectRef = useRef(null)
@@ -62,13 +65,13 @@ function Project(){
     return(
         <div className='projet-container'>
             <div className="projet-wrapper">
-                <div className="nav">
+                <div className={actualProject > 0 ? "round-box swap-left-icon" : "swap-left-icon"}>
                     {actualProject > 0 && <img onClick={handlePrevious} src={back} className='nav-svg' alt="Previous svg" />}
                 </div>
-                <div ref={projectRef} className="project-container">
+                <div ref={projectRef} className="project">
                     <SingleProject project={projects[actualProject]} />
                 </div>
-                <div className="nav">
+                <div className={actualProject < projects.length-1 ? "round-box swap-rigth-icon" : "swap-rigth-icon"}>
                     {actualProject < projects.length-1 && <img onClick={handleNext} src={back} className='nav-svg next' alt="Next svg" />}
                 </div>
             </div>

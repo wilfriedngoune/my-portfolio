@@ -1,0 +1,57 @@
+@import '../../utils/styles.scss';
+
+.single-stack-wrapper{
+    display: flex;
+    position: absolute;
+    .single-stack-container{
+        border: 1.5px solid rgba(128, 128, 128, 0.438);
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        .stack-img{
+            width: 30px;
+            margin-bottom: 10px;
+        }
+        .name{
+            text-align: center;
+            font-size: 0.8em;
+        }
+    }
+    .animate-from-left{
+        animation: animateFromLeft 0.4s ease forwards;
+    }
+    .animate-from-rigth{
+        animation: animateFromRigth 0.4s ease forwards;
+    }
+    .line{
+        background-color: rgba(128, 128, 128, 0.438);
+        height: 1px;
+        transform-origin: 0 0; 
+        z-index: 3;
+    }
+    .line-left{
+        transform-origin: 100% 0;
+    }
+}
+
+
+@keyframes animateFromRigth {
+    from{
+        transform: scale(0.9) translateX(20px);
+    }
+    to{
+        transform: scale(1) translateX(0px);
+    }
+}
+
+@keyframes animateFromLeft {
+    from{
+        transform: scale(0.9) translateX(-20px);
+    }
+    to{
+        transform: scale(1) translateX(0px);
+    }
+}

@@ -32,7 +32,7 @@ function Banner(){
         <div className='banner-container'>
             <div className="avatar-info">
                 <div className="avatar">
-                    <img src="/avatars/avatar1.png" className='avatar-1' alt="Avatar 1" />
+                    <img src="/avatars/avatar.png" className='avatar-1' alt="Avatar 1" />
                 </div>
                 <div className="info">
                     <div className="name">Wilfried Baudouin, Ngoune Tsaka</div>

@@ -1,7 +1,6 @@
 @import '../../utils/styles.scss';
 
 .footer-container{
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,5 +52,12 @@
     to{
       bottom: 20px;
       opacity: 1;
+    }
+}
+
+@media screen and (max-width:$mobile-breakpoint) {
+    .footer-container footer{
+        position: relative;
+        width: 75%;
     }
 }

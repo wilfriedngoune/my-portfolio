@@ -1,0 +1,26 @@
+@import '../../utils/styles.scss';
+
+.skills-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .skills-wrapper{
+      .brain{
+        width: 70px;
+        z-index: 50;
+      }
+    }
+}
+
+@media screen and (max-width:$mobile-breakpoint) {
+  .skills-container {
+    transform: scale(0.8);
+    .skills-wrapper{
+      margin: 100px auto;
+      // margin-left: 100px;
+    }
+  }
+}

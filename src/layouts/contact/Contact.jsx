@@ -8,7 +8,7 @@ function Contact(){
         <div className='contact-container'>
             <div className="contact-wrapper">
                <div className="other-platform">
-                <div className="title">Where else you can find me</div>
+                <div className="contact-title">Where else you can find me</div>
                 <div className="platform-list">
                     <div className="single-platform">
                         <div className="logo-container">
@@ -34,7 +34,7 @@ function Contact(){
                </div>
                 <div className="divider"></div>
                <div className="form-section">
-                <div className="title">Send me a message 🙃</div>
+                <div className="contact-title">Send me a message 🙃</div>
                 <div className="form">
                     <input type="text" placeholder='Name' />
                     <input type="email" placeholder='Email' />
