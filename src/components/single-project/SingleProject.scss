@@ -59,9 +59,10 @@
 
         img{
             width: 100%;
-            height: 100%;
-            object-fit: cover !important;
+            height: 300px !important;
+            object-fit: contain !important;
         }
+       
     }
 }
 
@@ -70,15 +71,20 @@
         flex-direction: column-reverse;
         gap: 60px;
         .info-section{
-            width: 100%;
+            width: 90%;
 
             .visit{
                 width: 90%;
             }
         }
         .demo-section{
-            width: 100%;
-            height: 200px;
+            width: 90%;
+            height: 170px;
+
+            img{
+                width: 100%;
+                height: 170px !important;
+            }
         }
     }
 }

@@ -31,7 +31,7 @@ function Project(){
 
         {
             name : "The Village",
-            description : "Web application similar to linkedin. Connects profiles with similar characteristics. Whether similar in preference or profession. The application focuses on the field of medicine.",
+            description : "Web application similar to linkedin. Connects profiles with similar characteristics. The application focuses on the field of medicine.",
             link : "",
             gallery : ['/thevillage/1.png', '/thevillage/2.png', '/thevillage/3.png', '/thevillage/4.png'],
             logo : 'thevillage.jpeg',

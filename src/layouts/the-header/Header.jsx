@@ -33,9 +33,11 @@ function Header(){
         };
 
         document.addEventListener('mousedown', handleClickOutside);
+        document.addEventListener('scroll', handleClickOutside);
 
         return () => {
         document.removeEventListener('mousedown', handleClickOutside);
+        document.removeEventListener('scroll', handleClickOutside);
         };
     }, []);
 

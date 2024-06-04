@@ -10,7 +10,7 @@ function Experience(){
                     <img src="/tyrexdigital.png" className = 'logo' alt="" />
 
                     <div className="other-info">
-                        <div className="work-title">WEB Developer & Designer</div>
+                        <div className="work-title">Fullstacks Developer & Designer</div>
                         <div className="name-type">
                             <div className="name">Tyrex Digital</div>
                             <div>•</div>

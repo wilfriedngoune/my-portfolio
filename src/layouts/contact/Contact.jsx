@@ -2,6 +2,7 @@
 import './Contact.scss';
 import upwork from '../../assets/upwork.svg'
 import fiverr from '../../assets/fiverr.svg'
+import slack from '../../assets/slack.svg'
 
 function Contact(){
     return(
@@ -22,6 +23,13 @@ function Contact(){
                             <img src={upwork} alt="" />
                         </div>
                         <div className="name">Upwork</div>
+                    </div>
+
+                    <div className="single-platform">
+                        <div className="logo-container">
+                            <img src={slack} alt="" />
+                        </div>
+                        <div className="name">Slack</div>
                     </div>
 
                     {/* <div className="single-platform">

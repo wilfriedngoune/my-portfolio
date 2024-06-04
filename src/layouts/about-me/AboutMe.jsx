@@ -17,7 +17,7 @@ function AboutMe(){
 
                     <div className="text3">My main role is to set up end-to-end software in order to bring added value to your business.</div>
 
-                    <div className="download-cv">Download my CV</div>
+                    <div onClick={() => window.open('/cv.pdf', '_blank')} className="download-cv">Download my CV</div>
                 </div>
             </div>
         </div>

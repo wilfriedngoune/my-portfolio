@@ -25,11 +25,13 @@ function SingleProject ({project}) {
                showStatus={false}
                showThumbs={false}
                infiniteLoop={true}
-               autoPlay={true}>
+               autoPlay={true}
+               dynamicHeight={true}
+               >
                 {
                     project.gallery.map((image, index) => 
                     <div key={index}>
-                        <img src={"/demos" + image} alt="" />
+                        <img src={"/demos" + image} alt="" style={{objectFit: 'contain !important'}} />
                     </div> )
                 }
                </Carousel>
