@@ -27,7 +27,7 @@ function Education(){
                         </div> */}
                         <div onClick={() => setSelectedUni('clausthal')} className={selectedUni == 'clausthal' ? "single-uni selected" : "single-uni"}>
                             <div className="logo-container">
-                                <img src={clausthal} alt="" />
+                                <img src={clausthal} alt="TU Clausthal" />
                             </div>
                             <div className="information">
                                 <div className="name">TU Clausthal</div>
@@ -37,7 +37,7 @@ function Education(){
                         </div>
                         <div onClick={() => setSelectedUni('uy1')} className={selectedUni == 'uy1' ? "single-uni selected" : "single-uni"}>
                             <div className="logo-container">
-                                <img src={uni1} alt="" />
+                                <img src={uni1} alt="University of Yaounde I" />
                             </div>
                             <div className="information">
                                 <div className="name">University of Yaounde 1</div>

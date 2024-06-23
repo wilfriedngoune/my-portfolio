@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.scss'
 import Banner from './layouts/banner/Banner'
 import Footer from './layouts/the-footer/Footer'
@@ -12,8 +12,6 @@ import Experience from './layouts/experience/Experience'
 
 function App() {
   const [selectedLink, setSelectedLink] = useState('about')
-  const [loadImage, setLoadImage] = useState(true)
-  const [displaySkeleton, setDisplaySkeleton] = useState(true)
   const links = [
     {
       name : 'About me',
@@ -41,17 +39,6 @@ function App() {
     }, 
   ]
 
-  useEffect(() => {
-    setTimeout(() => {
-      setLoadImage(false)
-    }, 3000);
-  }, [])
-
-  useEffect(() => {
-    setTimeout(() => {
-      setDisplaySkeleton(false)
-    }, 2000);
-  }, [])
 
   const handeChangeLink = (link) =>{
     setSelectedLink(link)
@@ -60,10 +47,6 @@ function App() {
   return (
     <>
       <Header />
-      {loadImage ? 
-        <div className="load-image">
-          {displaySkeleton ? <div className="avatar-singleton"></div> :  <img src="/avatars/avatar.png" alt="Avatar 1" /> }
-        </div> : <>
         <div className="content">
           <Banner />
           <div className="nav-info">
@@ -86,24 +69,23 @@ function App() {
                 {selectedLink === 'skills' &&<Skills /> }
             </div>
             <div className="information-container-mobile">
-              <div id='about' className="title">About</div>
+              <h2 id='about' className="title">About</h2>
               <AboutMe />
-              <div  id='education' className="title">Education</div>
+              <h2  id='education' className="title">Education</h2>
               <Education />
-              <div id='experience' className="title">Experience</div>
+              <h2 id='experience' className="title">Experience</h2>
               <Experience />
-              <div  id='skills' className="title">Skills</div>
+              <h2  id='skills' className="title">Skills</h2>
               <Skills />
-              <div  id='projects' className="title">Projects</div>
+              <h2  id='projects' className="title">Projects</h2>
               <Project />
-              <div  id='contact' className="title">Contact</div>
+              <h2  id='contact' className="title">Contact</h2>
               <Contact />
             </div>
           </div>
         </div>
 
         <Footer />
-      </>}
     </>
   )
 }

@@ -17,7 +17,7 @@ function Experience(){
                             <div className="type">Full time</div>
                         </div>
                         <div className="time">March 2022 - August 2023</div>
-                        <div className="description">Working in this company has really taught me about collaboration and communication between colleagues. I also learned how to build good interfaces with good development practices.</div>
+                        <p className="description">Working in this company has really taught me about collaboration and communication between colleagues. I also learned how to build good interfaces with good development practices.</p>
                     </div>
                 </div>
             </div>

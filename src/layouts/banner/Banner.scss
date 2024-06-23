@@ -73,9 +73,8 @@
 
 @keyframes animate-avatar {
     from{
-        width: 200px;
-        height: 200px;
-        transform: translate(calc(100vw/4), calc(100vh/4));
+        width: 100px;
+        height: 100px;
     }
     to{
         width: 80px;
