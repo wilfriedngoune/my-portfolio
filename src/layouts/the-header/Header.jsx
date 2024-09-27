@@ -49,7 +49,6 @@ function Header(){
         const targetSection = document.getElementById(sectionId);
         if (targetSection) {
         const offsetTop = targetSection.offsetTop - 70;
-        console.log(offsetTop);
         window.scrollTo({
             top: offsetTop,
             behavior: 'smooth',
@@ -74,6 +73,7 @@ function Header(){
                     <a className="link" onClick={() => scrollToSection('experience')}>Experience</a>
                     <a className="link" onClick={() => scrollToSection('skills')}>Skills</a>
                     <a className="link" onClick={() => scrollToSection('projects')}>Projects</a>
+                    <a className="link" onClick={() => scrollToSection('blog')}>Blog</a>
                     <a className="link" onClick={() => scrollToSection('contact')}>Contact</a>
                     <div onClick={() => window.open('https://github.com/wilfriedngoune/my-portfolio', '_blank')} className="link colored"> &lt;/&gt; Code on GitHub</div>
                 </div>}

@@ -9,6 +9,7 @@ import Contact from './layouts/contact/Contact'
 import Project from './layouts/projects/Project'
 import Skills from './layouts/skills/Skills'
 import Experience from './layouts/experience/Experience'
+import Blog from './layouts/blog/Blog'
 
 function App() {
   const [selectedLink, setSelectedLink] = useState('about')
@@ -32,6 +33,10 @@ function App() {
     {
       name : 'Projects',
       code : 'projects'
+    }, 
+    {
+      name : 'Blog',
+      code : 'blog'
     }, 
     {
       name : 'Contact',
@@ -66,6 +71,7 @@ function App() {
                 {selectedLink === 'experience' && <Experience />}
                 {selectedLink === 'contact' && <Contact />}
                 {selectedLink === 'projects' &&<Project /> }
+                {selectedLink === 'blog' &&<Blog /> }
                 {selectedLink === 'skills' &&<Skills /> }
             </div>
             <div className="information-container-mobile">
@@ -79,6 +85,8 @@ function App() {
               <Skills />
               <h2  id='projects' className="title">Projects</h2>
               <Project />
+              <h2  id='blog' className="title">Blog</h2>
+              <Blog />
               <h2  id='contact' className="title">Contact</h2>
               <Contact />
             </div>

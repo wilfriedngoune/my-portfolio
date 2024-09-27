@@ -30,7 +30,7 @@
         background-color: rgba(128, 128, 128, 0.438);
         height: 1px;
         transform-origin: 0 0; 
-        z-index: 3;
+        z-index: 0 !important;
     }
     .line-left{
         transform-origin: 100% 0;

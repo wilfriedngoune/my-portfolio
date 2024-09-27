@@ -42,6 +42,7 @@
 }
 .border-bottom{
     border-bottom: 1px solid rgba(128, 128, 128, 0.171);
+    backdrop-filter: blur(30px);
 }
 
 @media screen and (max-width : $mobile-breakpoint) {
@@ -50,7 +51,6 @@
         top: 0;
         left: 0;
         width: 100vw;
-        background-color: rgba(0, 0, 0, 0.9);
         z-index: 100;
         header{
             width: 90%;

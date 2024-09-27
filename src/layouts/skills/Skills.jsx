@@ -51,14 +51,25 @@ function Skills(){
             lineTopOffset : 30,
         },
         {
-            name: 'React JS',
+            name: 'React JS & Native',
             logo : 'react.svg',
             linePosition: 'right', 
-            lineWidth : 140,
+            lineWidth : 120,
             lineInclinaison : 10,
             boxPosition : '-110px 0 0 -180px',
             lineTopOffset : 40,
         },
+
+        {
+            name: 'C++',
+            logo : 'c++.svg',
+            linePosition: 'left', 
+            lineWidth : 110,
+            lineInclinaison : -50,
+            boxPosition : '-190px 0 0 -20px',
+            lineTopOffset : 60,
+        },
+        
 
     ]
     return(
