@@ -1,7 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import './Education.scss';
 import uni1 from '../../assets/uni-yaounde1.png'
+import tu_bs from '../../assets/tu_bs.png'
 import ostfalia from '../../assets/ostfalia.png'
+import graduation from '../../assets/graduation.svg'
 import { useState } from 'react';
 
 function Education(){
@@ -14,6 +16,18 @@ function Education(){
         <div className='education-container'>
             <div className="education-wrapper">
                     <div className="uni-section">
+
+                        <div onClick={() => setSelectedUni('tudelft')} className={selectedUni == 'uy1' ? "single-uni selected" : "single-uni"}>
+                            <div className="logo-container">
+                                <img src={tu_bs} alt="TU Braunschweig" />
+                            </div>
+                            <div className="information">
+                                <div className="name">TU Braunschweig</div>
+                                <div className="year">PhD Student</div>
+                                <div className="diplom">AI & Air Traffic Control</div>
+                            </div>
+                        </div>
+
                         <div onClick={() => setSelectedUni('ostfalia')} className={selectedUni == 'ostfalia' ? "single-uni selected" : "single-uni"}>
                             <div className="logo-container">
                                 <img src={ostfalia} alt="" />
@@ -46,7 +60,7 @@ function Education(){
                                     <div className="fac">Master, Informatic</div>
                                 </div>
                                 <div className="local">Wolfenbüttel, Germany</div>
-                                <div className="year">2024 - Now</div>
+                                <div className="year">2024 - 2026</div>
 
                                 <ul>
                                     <li>Smart IoT</li>
@@ -56,7 +70,12 @@ function Education(){
                                     <li>Advanced programming in C++ and python</li>
                                 </ul>
 
-                                <div className="certificats">Certificats</div>
+                                 <div className='graduation-section'>
+                                    <div className="svg-section"><img src={graduation} /></div>
+                                    <div className="graduation">Master of Science (M.Sc.) - Note: 1.9</div>
+                                </div>
+
+                                <div onClick={() => requestDocs()} className="certificats">Certificats</div>
                             </div>
                         }
 
@@ -78,7 +97,34 @@ function Education(){
                                     <li>Advanced programming technology</li>
                                 </ul>
 
-                                {/* <div onClick={() => requestDocs()} className="certificats">Documents</div> */}
+                                <div className='graduation-section'>
+                                    <div className="svg-section"><img src={graduation} /></div>
+                                    <div className="graduation">Bachelor of Science (B.Sc.) - Note: 2.0</div>
+                                </div>
+
+                                <div onClick={() => requestDocs()} className="certificats">Certificats</div>
+                            </div>
+                        }
+
+                         {
+                            selectedUni == 'tudelft' && 
+                            <div className="content">
+                                 <div className="uni-fac">
+                                    <div className="name">Technische Universität Braunschweig</div>
+                                    <div className="fac">PhD, AI & ATC</div>
+                                </div>
+                                <div className="local">Braunschweig, Germany</div>
+                                <div className="year">2027 - Now</div>
+
+                                <ul>
+                                    <li>Algorithms, Data Structures and Database</li>
+                                    <li>Modeling and object-oriented programming</li>
+                                    <li>WEB programming</li>
+                                    <li>Information system and application testing</li>
+                                    <li>Advanced programming technology</li>
+                                </ul>
+
+                                <div onClick={() => requestDocs()} className="certificats">Certificats</div>
                             </div>
                         }
                 </div>

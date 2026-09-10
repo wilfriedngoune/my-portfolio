@@ -15,7 +15,7 @@ function Banner(){
 
     const startAnimation = () => {
         resetAnimation();
-        setInterval(resetAnimation, 10000);
+        setInterval(resetAnimation, 20000);
     };
 
     const stopAnimation = () => {
@@ -32,12 +32,12 @@ function Banner(){
         <div className='banner-container'>
             <div className="avatar-info">
                 <div className="avatar">
-                    <img src="/avatars/avatar2.png" className='avatar-1' alt="wilfriedngoune Avatar 1" />
+                    <img src="/avatars/avatar.jpeg" className='avatar-1' alt="wilfriedngoune Avatar 1" />
                 </div>
                 <div className="info">
                     <div className="name">Wilfried Baudouin, Ngoune Tsaka</div>
                     <div className="localization">Braunschweig, Germany</div>
-                    <div ref={titleRef} className="title">I'am a WEB Developer !</div>
+                    <div ref={titleRef} className="title">I'am a Software Developer and AI Researcher !</div>
                 </div>
             </div>
             {/* <div className="button">Hire me !</div> */}

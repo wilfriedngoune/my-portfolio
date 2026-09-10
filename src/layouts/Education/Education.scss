@@ -87,18 +87,36 @@
                 }
     
                 ul{
-                    margin: 20px 0;
+                    margin: 10px 0;
                     li{
                         margin-top: 10px;
                         margin-left: -20px;
                     }
                 }   
+
+                .graduation-section{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    margin-top: 25px;
+
+                    .svg-section{
+                        img{
+                            width: 25px;
+                        }
+                    }
+
+                    .graduation{
+                        font-size: 1em;
+                    }
+                }
     
     
                 .certificats{
                     color: $primary-color;
                     font-weight: bold;
                     cursor: pointer;
+                    margin-top: 20px;
                 }
                 .certificats:hover{
                     text-decoration: underline;

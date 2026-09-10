@@ -2,7 +2,7 @@ import './Footer.scss'
 import linkedin from '../../assets/linkedin.svg'
 import gmail from '../../assets/gmail.svg'
 import github from '../../assets/github.svg'
-import leetcode from '../../assets/leetcode.png'
+import google_scholar from '../../assets/google_scholar.jpg'
 
 
 function Footer(){
@@ -21,8 +21,9 @@ function Footer(){
                     <img src={github} alt="Github" />
                 </div>
 
-                <div title='LeetCode' onClick={() => window.open('https://leetcode.com/u/wilfriedngoune', '_blank')} className="img-container white-back">
-                    <img src={leetcode} alt="Upwork" />
+
+                <div title='Google Scholar' onClick={() => window.open('https://google.scholar.com', '_blank')} className="img-container white-back">
+                    <img src={google_scholar} alt="Upwork" />
                 </div>
             </footer>
         </div>
