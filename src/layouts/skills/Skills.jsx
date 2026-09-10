@@ -75,7 +75,7 @@ function Skills(){
     return(
         <div className='skills-container'>
             <div className="skills-wrapper">
-                <img src="/stacks/brain.svg" className='brain' alt="Brain" />
+                <img src={import.meta.env.BASE_URL + "/stacks/brain.svg"} className='brain' alt="Brain" />
                 {
                     stacks.map((stack, index) => <div key={index}><SingleStack stack={stack}/></div>)
                 }

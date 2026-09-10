@@ -7,7 +7,7 @@ function AboutMe(){
         <div className='about-me-container'>
             <div className="about-me-wrapper">
                 <div className="avatar">
-                    <img src="/avatars/avatar1.png" alt="wilfriedngoune Workspace" />
+                    <img src= {import.meta.env.BASE_URL + "/avatars/avatar1.png"} alt="wilfriedngoune Workspace" />
                 </div>
 
                 <div className="bio-container">
@@ -19,7 +19,7 @@ function AboutMe(){
                         <div className="text3">My main role is to set up end-to-end software in order to bring added value to your business.</div>
                     </p>
 
-                    <div onClick={() => window.open('/cv.pdf', '_blank')} className="download-cv">Download my CV</div>
+                    <div onClick={() => window.open(import.meta.env.BASE_URL + '/cv.pdf', '_blank')} className="download-cv">Download my CV</div>
                 </div>
             </div>
         </div>

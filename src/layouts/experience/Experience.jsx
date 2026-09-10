@@ -7,7 +7,7 @@ function Experience(){
         <div className='experience-container'>
             <div className="experience-wrapper">
                 <div className="single-experience">
-                    <img src="/tyrexdigital.png" className = 'logo' alt="" />
+                    <img src={import.meta.env.BASE_URL + "/tyrexdigital.png"} className = 'logo' alt="" />
 
                     <div className="other-info">
                         <div className="work-title">Fullstacks Developer & Designer</div>
@@ -22,7 +22,7 @@ function Experience(){
                 </div>
 
                 <div className="single-experience">
-                    <img src="/dlr_logo.png" className = 'logo' alt="" />
+                    <img src={import.meta.env.BASE_URL + "/dlr_logo.png"} className = 'logo' alt="" />
 
                     <div className="other-info">
                         <div className="work-title">Developer & AI Researcher</div>

@@ -10,7 +10,7 @@ function SingleProject ({project}) {
             <div className="info-section">
                 <div className="logo-title">
                     <div className="logo-container">
-                        <img src={"/logos/" + project.logo}  alt={project.logo} />
+                        <img src={import.meta.env.BASE_URL + "/logos/" + project.logo}  alt={project.logo} />
                     </div>
                     <div className="project-title">{project.name}</div>
                 </div>
@@ -31,7 +31,7 @@ function SingleProject ({project}) {
                 {
                     project.gallery.map((image, index) => 
                     <div key={index}>
-                        <img src={"/demos" + image} alt={image} style={{objectFit: 'contain !important'}} />
+                        <img src={import.meta.env.BASE_URL + "/demos" + image} alt={image} style={{objectFit: 'contain !important'}} />
                     </div> )
                 }
                </Carousel>

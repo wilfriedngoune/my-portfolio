@@ -14,7 +14,7 @@ function Blog(){
                 </div>
                 <div onClick={() => window.open('https://blog.wilfriedngoune.me','_blank')}  className="discover-more-container">
                     <div className="svg-container">
-                        <img src="/left-arrow.svg" alt="" className='arrow-for-more' />
+                        <img src={import.meta.env.BASE_URL + "/left-arrow.svg"} alt="" className='arrow-for-more' />
                     </div>
                     <div className="text">Discover more articles</div>
                 </div>
