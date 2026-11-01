@@ -23,6 +23,16 @@ function Skills(){
             boxPosition : '0 0 0 -100px',
             lineTopOffset : 40,
         },
+
+        {
+            name: 'Python',
+            logo : 'python.svg',
+            linePosition: 'right', 
+            lineWidth : 200,
+            lineInclinaison : -70,
+            boxPosition : '100px 0 0 -100px',
+            lineTopOffset : 40,
+        },
         {
             name: 'Node JS',
             logo : 'node.svg',

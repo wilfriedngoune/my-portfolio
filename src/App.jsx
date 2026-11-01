@@ -5,11 +5,11 @@ import Footer from './layouts/the-footer/Footer'
 import Header from './layouts/the-header/Header'
 import AboutMe from './layouts/about-me/AboutMe'
 import Education from './layouts/Education/Education'
-import Contact from './layouts/contact/Contact'
 import Project from './layouts/projects/Project'
 import Skills from './layouts/skills/Skills'
 import Experience from './layouts/experience/Experience'
-import Blog from './layouts/blog/Blog'
+import Publications from './layouts/publications/Publications'
+import Moments from './layouts/Moments/Moments'
 
 function App() {
   const [selectedLink, setSelectedLink] = useState('about')
@@ -35,12 +35,12 @@ function App() {
       code : 'projects'
     }, 
     {
-      name : 'Blog',
-      code : 'blog'
+      name : 'Publications',
+      code : 'publications'
     }, 
     {
-      name : 'Contact',
-      code : 'contact'
+      name : 'Moments',
+      code : 'moments'
     }, 
   ]
 
@@ -69,10 +69,10 @@ function App() {
                 {selectedLink === 'about'&& <AboutMe />}
                 {selectedLink === 'education' && <Education />}
                 {selectedLink === 'experience' && <Experience />}
-                {selectedLink === 'contact' && <Contact />}
-                {selectedLink === 'projects' &&<Project /> }
-                {selectedLink === 'blog' &&<Blog /> }
                 {selectedLink === 'skills' &&<Skills /> }
+                {selectedLink === 'projects' &&<Project /> }
+                {selectedLink === 'publications' && <Publications />}
+                {selectedLink === 'moments' &&<Moments /> }
             </div>
             <div className="information-container-mobile">
               <h2 id='about' className="title">About</h2>
@@ -85,10 +85,10 @@ function App() {
               <Skills />
               <h2  id='projects' className="title">Projects</h2>
               <Project />
-              <h2  id='blog' className="title">Blog</h2>
-              <Blog />
-              <h2  id='contact' className="title">Contact</h2>
-              <Contact />
+              <h2  id='publications' className="title">Publications</h2>
+              <Publications />
+              <h2  id='moments' className="title">Moments</h2>
+              <Moments />
             </div>
           </div>
         </div>

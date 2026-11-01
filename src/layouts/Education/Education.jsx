@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import './Education.scss';
 import uni1 from '../../assets/uni-yaounde1.png'
-import tu_bs from '../../assets/tu_bs.png'
 import ostfalia from '../../assets/ostfalia.png'
 import graduation from '../../assets/graduation.svg'
 import { useState } from 'react';
@@ -9,24 +8,11 @@ import { useState } from 'react';
 function Education(){
     const [selectedUni, setSelectedUni] = useState('ostfalia')
 
-    // const requestDocs = () =>{
-    //     window.open("mailto:ngounewilfried@gmail.com?subject=Request for Documents for a possible collaboration&body=Hi Wilfried ! I sending you this e-mail because I found your profile very interesting, as well as your educational background. I would therefore like to have some proof documents in order to employ you in my company. Thank you !")
-    // }
+
     return(
         <div className='education-container'>
             <div className="education-wrapper">
                     <div className="uni-section">
-
-                        <div onClick={() => setSelectedUni('tudelft')} className={selectedUni == 'uy1' ? "single-uni selected" : "single-uni"}>
-                            <div className="logo-container">
-                                <img src={tu_bs} alt="TU Braunschweig" />
-                            </div>
-                            <div className="information">
-                                <div className="name">TU Braunschweig</div>
-                                <div className="year">PhD Student</div>
-                                <div className="diplom">AI & Air Traffic Control</div>
-                            </div>
-                        </div>
 
                         <div onClick={() => setSelectedUni('ostfalia')} className={selectedUni == 'ostfalia' ? "single-uni selected" : "single-uni"}>
                             <div className="logo-container">
@@ -61,21 +47,20 @@ function Education(){
                                 </div>
                                 <div className="local">Wolfenbüttel, Germany</div>
                                 <div className="year">2024 - 2026</div>
-
                                 <ul>
-                                    <li>Smart IoT</li>
-                                    <li>Robotic and Cobotic</li>
-                                    <li>Robusts Systems</li>
-                                    <li>Automative Systems</li>
-                                    <li>Advanced programming in C++ and python</li>
+                                    <li>Cloud-Native Computing</li>
+                                    <li>Automotive and Autonomous Systems</li>
+                                    <li>Neural Networks and Reinforcement Learning</li>
+                                    <li>Advanced Programming in C++ and Python</li>
+                                    <li>Master's Thesis: Reinforcement Learning Applied to Conflict Resolution in Upper Airspace</li>
                                 </ul>
 
                                  <div className='graduation-section'>
                                     <div className="svg-section"><img src={graduation} /></div>
-                                    <div className="graduation">Master of Science (M.Sc.) - Note: 1.9</div>
+                                    <div className="graduation">Master of Science (M.Sc.) - Note: 2.0</div>
                                 </div>
 
-                                <div onClick={() => requestDocs()} className="certificats">Certificats</div>
+                                <div className="certificats">Read more</div>
                             </div>
                         }
 
@@ -102,29 +87,7 @@ function Education(){
                                     <div className="graduation">Bachelor of Science (B.Sc.) - Note: 2.0</div>
                                 </div>
 
-                                <div onClick={() => requestDocs()} className="certificats">Certificats</div>
-                            </div>
-                        }
-
-                         {
-                            selectedUni == 'tudelft' && 
-                            <div className="content">
-                                 <div className="uni-fac">
-                                    <div className="name">Technische Universität Braunschweig</div>
-                                    <div className="fac">PhD, AI & ATC</div>
-                                </div>
-                                <div className="local">Braunschweig, Germany</div>
-                                <div className="year">2027 - Now</div>
-
-                                <ul>
-                                    <li>Algorithms, Data Structures and Database</li>
-                                    <li>Modeling and object-oriented programming</li>
-                                    <li>WEB programming</li>
-                                    <li>Information system and application testing</li>
-                                    <li>Advanced programming technology</li>
-                                </ul>
-
-                                <div onClick={() => requestDocs()} className="certificats">Certificats</div>
+                                <div className="certificats">Read more</div>
                             </div>
                         }
                 </div>

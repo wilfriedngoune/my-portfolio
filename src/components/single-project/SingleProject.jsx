@@ -16,7 +16,7 @@ function SingleProject ({project}) {
                 </div>
                 <p className="description">{project.description}</p>
                 <div className="stacks">{project.stacks}</div>
-                <div className="visit" style={{backgroundColor: project.state == 'prod' ? project.color : 'gray'}} onClick={() => project.state == 'prod' && window.open(project.link, '_blank')}>Visit {project.state === 'dev' && '(Still on dev...)'}</div>
+                {project.state != 'project' && <div className="visit" style={{backgroundColor: project.state == 'prod' ? project.color : 'gray'}} onClick={() => project.state == 'prod' && window.open(project.link, '_blank')}>Visit {project.state === 'dev' && '(Still on dev...)'}</div>}
             </div>
             <div className="demo-section">
                <Carousel

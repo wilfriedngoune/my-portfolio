@@ -1,0 +1,240 @@
+
+.moments-container {
+    width: 100%;
+    padding: 60px 0;
+    overflow: hidden;
+    color: white;
+
+    .moments-header {
+        max-width: 1100px;
+        margin: 0 auto 30px;
+        padding: 0 20px;
+
+        h2 {
+            font-size: 2em;
+            margin: 0 0 10px;
+        }
+
+        p {
+            color: #999;
+            font-size: 0.9em;
+            margin: 0;
+        }
+    }
+
+    .moments-carousel {
+        width: 100%;
+        overflow: hidden;
+
+        // Soft fade on both sides
+        mask-image: linear-gradient(
+            to right,
+            transparent,
+            black 5%,
+            black 95%,
+            transparent
+        );
+    }
+
+    .moments-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+
+        animation: momentsScroll 35s linear infinite;
+
+        // Pause carousel on hover
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
+
+    .single-moment {
+        position: relative;
+        width: 400px;
+        height: 460px;
+        flex-shrink: 0;
+        overflow: hidden;
+
+        border-radius: 14px;
+        background: #1c1c1c;
+        border: 1px solid #333;
+        box-sizing: border-box;
+
+        cursor: default;
+
+        &:hover {
+            .moment-image {
+                transform: scale(1.06);
+            }
+
+            .moment-overlay {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
+
+    .moment-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        transition: transform 0.5s ease;
+    }
+
+    .moment-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        padding: 55px 20px 20px;
+
+        background: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0.65) 55%,
+            transparent
+        );
+
+        transform: translateY(30px);
+        opacity: 0;
+
+        transition:
+            transform 0.4s ease,
+            opacity 0.4s ease;
+
+        .moment-label {
+            display: inline-block;
+            margin-bottom: 8px;
+
+            color: #8ab4f8;
+            font-size: 0.7em;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            margin: 0 0 8px;
+            font-size: 1.1em;
+            font-weight: 600;
+            color: white;
+        }
+
+        p {
+            margin: 0;
+            font-size: 0.85em;
+            line-height: 1.6;
+            color: #ddd;
+        }
+    }
+}
+
+// Infinite horizontal scrolling
+@keyframes momentsScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+// Tablet
+@media (max-width: 768px) {
+    .moments-container {
+        padding: 45px 0;
+
+        .moments-header {
+            padding: 0 18px;
+
+            h2 {
+                font-size: 1.7em;
+            }
+        }
+
+        .single-moment {
+            width: 250px;
+            height: 320px;
+        }
+
+        .moments-track {
+            gap: 15px;
+            animation-duration: 30s;
+        }
+    }
+}
+
+// Mobile
+@media (max-width: 480px) {
+    .moments-container {
+        padding: 35px 0;
+
+        .moments-header {
+            padding: 0 15px;
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+        }
+
+        .single-moment {
+            width: 220px;
+            height: 290px;
+        }
+
+        .moments-track {
+            gap: 12px;
+            animation-duration: 28s;
+        }
+
+        // Always show text on mobile
+        .moment-overlay {
+            transform: translateY(0);
+            opacity: 1;
+            padding: 45px 15px 15px;
+
+            h3 {
+                font-size: 1em;
+            }
+
+            p {
+                font-size: 0.8em;
+            }
+        }
+    }
+}
+
+// Touch devices
+@media (hover: none) {
+    .moments-container .moment-overlay {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+// Accessibility
+@media (prefers-reduced-motion: reduce) {
+    .moments-track {
+        animation: none;
+        width: 100%;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    .single-moment {
+        scroll-snap-align: start;
+    }
+
+    .moment-image,
+    .moment-overlay {
+        transition: none;
+    }
+}

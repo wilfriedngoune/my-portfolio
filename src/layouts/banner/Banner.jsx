@@ -37,7 +37,7 @@ function Banner(){
                 <div className="info">
                     <div className="name">Wilfried Baudouin, Ngoune Tsaka</div>
                     <div className="localization">Braunschweig, Germany</div>
-                    <div ref={titleRef} className="title">I'am a Software Developer and AI Researcher !</div>
+                    <div ref={titleRef} className="title">Software Developer & AI Researcher !</div>
                 </div>
             </div>
             {/* <div className="button">Hire me !</div> */}

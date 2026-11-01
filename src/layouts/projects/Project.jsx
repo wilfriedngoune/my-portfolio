@@ -8,19 +8,19 @@ function Project(){
     const [actualProject, setActualProject] = useState(0)
     const projects = [
         {
-            name : "Alaahza",
-            description : "A web application that enables a given African to learn to read, write and communicate in his or her mother tongue. The application is already in production and has several users.",
-            link : "https://dictionary.alaahza.com",
-            gallery : ['/alaahza/1.png', '/alaahza/2.png', '/alaahza/3.png', '/alaahza/4.png'],
-            logo : 'alaahza.png',
-            color : '#7A2BCF',
-            stacks : "#TypeScript #SCSS #ReactJS #NodeJS #Express #MongoDB",
+            name : "Studisjob",
+            description : "A marketplace for flexible local jobs, helping students find paid opportunities and making it easy for people to get help with everyday tasks.",
+            link : "https://studisjob.de/",
+            gallery : ['/studisjob/1.png', '/studisjob/2.png', '/studisjob/3.jpeg', '/studisjob/4.jpeg'],
+            logo : 'studisjob.png',
+            color : 'blue',
+            stacks : "#TypeScript #SCSS #ReactJS #Django #SQL",
             state : 'prod'
         },
 
         {
             name : "MyDE",
-            description : "MyDE is a web application to help you prepare for the TelC C1 German language exam. It contains hints for better preparation and exercises for practice.",
+            description : "An ecosystem to help you prepare for the TelC C1 German language exam. It contains hints for better preparation and exercises for practice.",
             link : "https://myydee.com",
             gallery : ['/myde/1.png', '/myde/2.png', '/myde/3.png', '/myde/4.png', '/myde/5.png', '/myde/6.png', '/myde/7.png'],
             logo : 'myde.png',
@@ -30,15 +30,17 @@ function Project(){
         },
 
         {
-            name : "The Village",
-            description : "Web application similar to linkedin. Connects profiles with similar characteristics. The application focuses on the field of medicine.",
-            link : "",
-            gallery : ['/thevillage/1.png', '/thevillage/2.png', '/thevillage/3.png', '/thevillage/4.png'],
-            logo : 'thevillage.jpeg',
-            color : 'green',
-            stacks : "#TypeScript #SCSS #ReactJS #NodeJS #Express #MongoDB",
-            state : 'dev'
-        }
+            name : "Sawyer Robot",
+            description : "We developed the Bamboleo game using a Sawyer robot, which detects and picks up objects from a balancing board. Using computer vision and inverse kinematics, the robot selects and removes objects while maintaining the board's balance",
+            link : "#",
+            gallery : ['/bamboleo/1.png', '/bamboleo/2.png', '/bamboleo/3.png', '/bamboleo/4.png'],
+            logo : 'bamboleo.png',
+            color : 'red',
+            stacks : "#Python #ROS2 #Linux #Yolo Model",
+            state : 'project'
+        },
+
+        
     ]
     const projectRef = useRef(null)
     const handleNext = () =>  {

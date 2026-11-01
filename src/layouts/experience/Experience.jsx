@@ -18,6 +18,7 @@ function Experience(){
                         </div>
                         <div className="time">March 2022 - August 2023</div>
                         <p className="description">Working in this company has really taught me about collaboration and communication between colleagues. I also learned how to build good interfaces with good development practices.</p>
+                        <div className="certificats">Read more</div>
                     </div>
                 </div>
 
@@ -33,6 +34,8 @@ function Experience(){
                         </div>
                         <div className="time">March 2025 - Now</div>
                         <p className="description">I design and develop applications and tools to assist air traffic controllers in their daily operations, including tasks such as conflict detection and resolution.</p>
+                        <div className="certificats">Read more</div>
+
                     </div>
                 </div>
             </div>

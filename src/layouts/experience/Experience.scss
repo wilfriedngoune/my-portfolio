@@ -43,6 +43,18 @@
                     margin-top: 15px;
                     color: gray;
                 }
+
+
+                .certificats{
+                    color: $primary-color;
+                    font-weight: bold;
+                    cursor: pointer;
+                    margin-top: 20px;
+                    margin-bottom: 15px;
+                }
+                .certificats:hover{
+                    text-decoration: underline;
+                }
             }
         }
     }

@@ -21,10 +21,12 @@
         }
     }
     .animate-from-left{
-        animation: animateFromLeft 0.4s ease forwards;
+        animation: animateFromLeft 0.4s ease forwards,
+        breathing 3s ease-in-out 0.4s infinite;
     }
     .animate-from-rigth{
-        animation: animateFromRigth 0.4s ease forwards;
+        animation: animateFromRigth 0.4s ease forwards,
+        breathing 3s ease-in-out 0.4s infinite;
     }
     .line{
         background-color: rgba(128, 128, 128, 0.438);
@@ -53,5 +55,15 @@
     }
     to{
         transform: scale(1) translateX(0px);
+    }
+}
+
+@keyframes breathing {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
     }
 }
