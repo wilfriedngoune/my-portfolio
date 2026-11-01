@@ -7,7 +7,7 @@ function Moments() {
     const moments = [
         {
             id: 1,
-            image: '/moments/masterthesis.png',
+            image: '/moments/masterthesis.jpg',
             title: "Master's Thesis",
             description: "Celebrating a major milestone surrounded by friends and family.",
             label: 'Graduation'
