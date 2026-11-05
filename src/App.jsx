@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import './App.scss'
 import Banner from './layouts/banner/Banner'
-import Footer from './layouts/the-footer/Footer'
 import Header from './layouts/the-header/Header'
 import AboutMe from './layouts/about-me/AboutMe'
 import Education from './layouts/Education/Education'
@@ -93,7 +92,6 @@ function App() {
           </div>
         </div>
 
-        <Footer />
     </>
   )
 }

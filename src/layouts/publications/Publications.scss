@@ -10,8 +10,8 @@
     .publications-header {
         margin-bottom: 35px;
 
-        h2 {
-            font-size: 2em;
+        .paper-title {
+            font-size: 1em;
             margin-bottom: 10px;
         }
 
@@ -85,7 +85,7 @@
     }
 
     .publication-title {
-        font-size: 1.15em;
+        font-size: 1em;
         font-weight: 600;
         margin: 10px 0;
         line-height: 1.5;

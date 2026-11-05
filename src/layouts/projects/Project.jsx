@@ -36,7 +36,29 @@ function Project(){
             gallery : ['/bamboleo/1.png', '/bamboleo/2.png', '/bamboleo/3.png', '/bamboleo/4.png'],
             logo : 'bamboleo.png',
             color : 'red',
-            stacks : "#Python #ROS2 #Linux #Yolo Model",
+            stacks : "#Python #ROS2 #Linux #Yolo Model #Computer Vison",
+            state : 'project'
+        },
+
+        {
+            name : "Library Assistance",
+            description : "Using the Pepper robot, I developed a library assistant that welcomes visitors, helps them find books by checking availability and guiding them to their locations, and notifies library staff via Discord in case of issues.",
+            link : "#",
+            gallery : ['/library/1.png', '/library/2.png', '/library/3.png'],
+            logo : 'bamboleo.png',
+            color : 'red',
+            stacks : "#Python #Discord #LLM #Flask #SQLite Database",
+            state : 'project'
+        },
+
+        {
+            name : "Autonomous Aircraft",
+            description : "I trained an aircraft agent using reinforcement learning to navigate safely while avoiding other aircraft and restricted zones, optimizing flight paths to reduce travel time, CO₂ emissions, and fuel consumption.",
+            link : "#",
+            gallery : ['/rlCompetition/1.png', '/rlCompetition/2.png', '/rlCompetition/3.png'],
+            logo : 'rlComp.png',
+            color : 'blue',
+            stacks : "#RL #PPO #MarkovDecisionProcess",
             state : 'project'
         },
 
